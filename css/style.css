@@ -1,0 +1,121 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 290px;
+  max-width: 392px;
+  padding: 5rem 0.5rem;
+  background-color: #fff;
+  width: 80%;
+}
+
+header {
+  min-width: 304px;
+  margin-bottom: 8rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #a3a5ae;
+}
+
+header .title {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+header .description {
+  font-size: 2.5rem;
+}
+
+.carts {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 30%;
+}
+
+.cart {
+  min-width: 250px;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.6rem;
+  border-top: 4px solid;
+  box-shadow: 0 2rem 6rem -3rem black;
+  margin-bottom: 2.2rem;
+}
+
+.cart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  margin-bottom: 0.9rem;
+}
+
+.cart .description {
+  font-size: 1.3rem;
+  margin-bottom: 3.5rem;
+}
+
+.cart img {
+  float: right;
+}
+
+.cyan {
+  border-top-color: #45d3d3;
+}
+
+.red {
+  border-top-color: #ea5353;
+}
+
+.orange {
+  border-top-color: #fcaf4a;
+}
+
+.blue {
+  border-top-color: #549ef2;
+}
+
+@media only screen and (min-width: 578px) {
+  .carts {
+    flex-flow: row;
+  }
+
+  .main {
+    max-width: unset;
+  }
+
+  header {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+}
